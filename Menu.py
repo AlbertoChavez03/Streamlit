@@ -80,7 +80,9 @@ if st.button("Actualizar información"):
 st.title("Calculadora Flexible")
 num1_cal = st.number_input("Ingrese el primer numero: ",value=0)
 num2_calc = st.number_input("Ingrese el segundo numero: ",value=0)
-operacion = st.selectbox("Selecciona una oparacion ",["suma","resta,","multiplicacion","divicion"])
+operacion = st.selectbox("Selecciona una oparacion ",["suma","resta","multiplicacion","divicion"])
 if st.button("Toca"):
     st.write("El resultado es: ",Fn.calculadora_flexible(num1_cal,num2_calc,operacion))
+
+
 
