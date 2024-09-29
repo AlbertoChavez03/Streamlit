@@ -7,19 +7,19 @@ st.text("TABLA DE FUNCIONES")
 st.title("Saludo")
 
 nombre = st.text_input("Escribe tu nombre")
-if  st.button("Opcion 1: Saludo"):
+if  st.button("Precione"):
         st.write(Fn.saludar(nombre))
 #2
 st.title("Suma de dos Numeros ")
 num1 = st.number_input("Dijite el primer numero: ",value=0)
 num2 = st.number_input("Dijite el segundo numero: ",value=0)
-if st.button("Opcion 2: Suma de dos numeros"):
+if st.button("Precione_aqui"):
     st.write("La suma de los dos numeros ingresados es ",Fn.sumar(num1,num2))
 #3
 st.title("Area de un Triangulo")
 base = st.number_input("Ingresa la base del triangulo",value=0)
 altura = st.number_input("Ingresa la Altura del triangulo",value=0)
-if st.button("Opcion 3: Area de un triangulo"):
+if st.button("Resultado"):
     st.write("El area del triangulo es: ",Fn.Area_triangulo(base,altura))
 #4
 st.title("Calcular descuento")
@@ -34,7 +34,7 @@ st.title("Suma de numeros")
 numeros_lista = st.text_input("Ingrese los numeros separados con comas (1,2,3 etc)")
 if numeros_lista:
     lista = [int (x)for x in numeros_lista.split(",")]
-    if st.button("Opcion 5: Suma de una lista de numeros"):
+    if st.button("Resultado_aqui"):
         st.write("La suma: ",Fn.sumar_lista(lista))
 #6
 st.title("Precio de un producto")
@@ -53,8 +53,7 @@ st.write("Pares: ")
 st.dataframe(tabla_P)
 tabla_I = pd.DataFrame(impares)
 st.write("Impares")
-if st.button("Numeros pares o impares"):
-    st.dataframe(tabla_I)
+st.dataframe(tabla_I)
 #8
 st.title("Multiplicacion de Numeros")
 numeros_multiplicar = st.text_input("Ingresa los numeros separados por comas (1,2,3 etc)")
@@ -82,9 +81,6 @@ st.title("Calculadora Flexible")
 num1_cal = st.number_input("Ingrese el primer numero: ",value=0)
 num2_calc = st.number_input("Ingrese el segundo numero: ",value=0)
 operacion = st.selectbox("Selecciona una oparacion ",["suma","resta,","multiplicacion","divicion"])
-if st.button("Resultado"):
+if st.button("Toca"):
     st.write("El resultado es: ",Fn.calculadora_flexible(num1_cal,num2_calc,operacion))
-
-
-
 
